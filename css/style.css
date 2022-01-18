@@ -382,7 +382,7 @@ footer {
   transition: 0.2s;
 }
 
-.rules__text {
+.rules-text {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   font-size: 11px;
@@ -400,12 +400,26 @@ footer {
   font-size: 14px;
 }
 
+.contact__messagers {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.contact__messagers a {
+  margin-right: 20px;
+}
+
 .footer__data-address {
   padding-top: 8px;
   color: #ffffff;
   font-family: "OldStandardTT";
   font-weight: 400;
   line-height: 1.4em;
+}
+
+.rules-text_down {
+  display: none;
 }
 
 .footer__data-address::before {
@@ -418,6 +432,7 @@ footer {
   content: url(../img/icons/phone-volume.svg);
   font-family: "fa-solid";
   padding-right: 5px;
+  fill: #ffffff;
 }
 
 .contact__phone {
@@ -715,6 +730,12 @@ footer {
   text-align: center;
 }
 
+.story-teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .story-team__item {
   text-align: center;
 }
@@ -838,6 +859,14 @@ footer {
   text-align: center;
 }
 
+.price__item img {
+  max-width: 100%;
+}
+
+.price__item iframe {
+  display: none;
+}
+
 @media (max-width: 1186px) {
   .main__items-flex_row-descktop {
     flex-direction: column;
@@ -889,6 +918,11 @@ footer {
 
   .footer__rules a {
     line-height: 1.3em;
+  }
+
+  .contact__messagers {
+    justify-content: flex-start;
+    margin-bottom: 15px;
   }
 
   .intro__title {
@@ -1023,6 +1057,26 @@ footer {
 
   .contact__phone {
     text-align: center;
+  }
+
+  .contact__messagers {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .rules-text {
+    display: none;
+  }
+
+  .rules-text_down {
+    display: block;
+    color: #202f39;
+    padding: 5px 0px 0px 0px;
+  }
+
+  .contact__messagers {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -1159,6 +1213,16 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  .price__item img {
+    display: none;
+  }
+
+  .price__item iframe {
+    display: inline-block;
+  }
+}
+
 @media (max-width: 590px) {
   .intro__img_tablet {
     display: none;
@@ -1166,6 +1230,16 @@ footer {
 
   .intro__img_mobile {
     display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  .story-teams {
+    flex-direction: column;
+  }
+
+  .story-team__item {
+    margin-bottom: 25px;
   }
 }
 
@@ -1231,6 +1305,12 @@ footer {
     padding: 0px 0px 0px 0px;
     font-size: 14px;
     padding: 12px 16px;
+  }
+}
+
+@media (max-width: 406px) {
+  .footer__data-address {
+    text-align: center;
   }
 }
 
