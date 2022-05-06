@@ -737,6 +737,11 @@ footer {
 }
 
 .story-team__item {
+  height: 386px;
+  align-content: center;
+}
+
+.story-team__item {
   text-align: center;
 }
 
@@ -1026,6 +1031,11 @@ footer {
 
   .story-team__item {
     margin-bottom: 25px;
+  }
+
+  .story-team__item {
+    height: auto;
+    align-content: center;
   }
 }
 
